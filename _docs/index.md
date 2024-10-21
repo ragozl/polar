@@ -26,6 +26,16 @@ Here are the two types of requests we accept:
 ```
 
 We will tell you which endpoints use which, so please refer back to this or keep it in your mind while you read the documentation.
+___
+## Request types
+The following endpoints use the following methods:
+| Endpoint | Method |
+| ----------- | ----------- |
+| /auth/create_mod | POST |
+| /auth/check | POST |
+| /auth/remove_mod | POST |
+| /auth/mods | POST |
+
 
 ___
 
@@ -34,6 +44,7 @@ In this section, we will be showing you authentication endpoints. These have fun
 
 ### /auth/create_mod
 `Request Type: Request User`
+This endpoint will create a moderator for your game. Please note that you **really need to practice good security** checks on the server administering requests for this. Use this with the combination of the **/auth/creds** endpoint to make sure that the user performing the action is whitelisted (only supports Roblox/Discord ID's, if you would like more, post a suggestion)
 
 ### /auth/check_mod
 `Request Type: Request User`
