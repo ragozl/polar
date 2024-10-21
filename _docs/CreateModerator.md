@@ -1,7 +1,7 @@
 ---
 title: create-moderator
-# permalink: /docs/create_moderator/
+permalink: /docs/create_moderator/
 # redirect_from: /docs/index.html
 ---
 
-hello world
+hello world lol too ez
