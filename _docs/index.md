@@ -34,10 +34,10 @@ ___
 ## Request types
 The following endpoints use the following methods:
 
-- /auth/create_mod | POST
-- /auth/check | POST 
-- /auth/remove_mod | POST
-- /auth/mods | POST
+- /auth/create_mod : POST
+- /auth/check : POST 
+- /auth/remove_mod : POST
+- /auth/mods : POST
 
 ___
 
