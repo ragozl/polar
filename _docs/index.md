@@ -26,7 +26,9 @@ Here are the two types of requests we accept:
 ```
 
 We will tell you which endpoints use which, so please refer back to this or keep it in your mind while you read the documentation.
+
 ___
+
 ## Authentication
 In this section, we will be showing you authentication endpoints. These have functionality like checking if a ID is a moderator, adding moderators, etc.
 
