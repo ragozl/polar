@@ -1,6 +1,6 @@
 ---
-title: create-moderator
-permalink: /docs/create-moderator
+title: createmoderator
+permalink: /docs/createmoderator
 ---
 
 hello world lol too ez
