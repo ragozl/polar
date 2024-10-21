@@ -8,13 +8,6 @@ redirect_from: /docs/index.html
 Most Polaris API endpoints take one of the two defined class arguments. These arguments should be passed as strings, even if you are giving a number. We do this purely for convenience, as it's easier to remember to just ```tostring``` or ```str()``` something for example.
 
 Here are the two types of requests we accept:
-### RequestNoUser
-```json
-{
-  "owner_secret": "your_owner_secret",
-  "gameid": "123456"
-}
-```
 ### RequestUser
 ```json
 {
@@ -23,3 +16,20 @@ Here are the two types of requests we accept:
   "userid": "123456"
 }
 ```
+
+### RequestNoUser
+```json
+{
+  "owner_secret": "your_owner_secret",
+  "gameid": "123456"
+}
+```
+
+We will tell you which endpoints use which, so please refer back to this or keep it in your mind while you read the documentation.
+
+# Authentication [/auth] - Moderators
+### /auth/create_moderator - Create a Moderator
+
+
+# Authentication [/auth] - Game
+### /auth/check - Check if a game is authorized
