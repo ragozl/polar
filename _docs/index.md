@@ -12,8 +12,7 @@ Here are the two types of requests we accept:
 ```json
 {
   "owner_secret": "your_owner_secret",
-  "gameid": "123456",
-  "userid": "123456"
+  "gameid": "123456",  "userid": "123456"
 }
 ```
 
@@ -27,9 +26,5 @@ Here are the two types of requests we accept:
 
 We will tell you which endpoints use which, so please refer back to this or keep it in your mind while you read the documentation.
 
-# Authentication [/auth] - Moderators
-### /auth/create_moderator - Create a Moderator
+### /auth/create_mod
 
-
-# Authentication [/auth] - Game
-### /auth/check - Check if a game is authorized
