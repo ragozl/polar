@@ -27,4 +27,7 @@ Here are the two types of requests we accept:
 We will tell you which endpoints use which, so please refer back to this or keep it in your mind while you read the documentation.
 
 ### /auth/create_mod
+> [!WARNING]
+> wow
+
 
