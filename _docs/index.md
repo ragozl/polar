@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Polaris Endpoint Docs
 permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
@@ -25,9 +25,17 @@ Here are the two types of requests we accept:
 ```
 
 We will tell you which endpoints use which, so please refer back to this or keep it in your mind while you read the documentation.
+---
+## Authentication Endpoints
+These endpoints help you authenticate if the game is the specific one, if a moderator is present in-game, add moderators, etc.
 
 ### /auth/create_mod
-> [!WARNING]
-> wow
+`This endpoint uses the RequestUser class.`
+
+### /auth/remove_mod
+`This endpoint uses the RequestUser class.`
+
+### /auth/check
+`This endpoint uses the RequestNoUser class.`
 
 
