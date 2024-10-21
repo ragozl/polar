@@ -1,6 +1,6 @@
 ---
 title: removemoderator
-permalink: /docs/removemoderator
+permalink: /docs/removemoderator/
 ---
 
 demo
