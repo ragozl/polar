@@ -97,7 +97,7 @@ If the request was missing a required arguments, then it will return something l
 
 
 ### /auth/check_mod
-`Request Type: Request User`
+`Request Type: Request User` - `Method: POST`
 
 This endpoint checks if a specified UserID is a moderator. The server will perform a check in realtime, making it so that you can instantly remove one of your moderators; and it will update cross-platform with no delay.
 
@@ -134,3 +134,6 @@ If you are missing an argument, it will look like this:
 }
 ```
 **Please note that the "message" arguments in these arguments are meant to be displayed to your members, outputted to logs, or exfiltrated to your webhooks. Some responses might not have these, so please perform a check in your code to see if the response had a message argument.**
+
+### /auth/check
+`Request Type: RequestNoUser` - `Method: POST`
