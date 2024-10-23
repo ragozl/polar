@@ -82,7 +82,7 @@ Make sure that all requests are converted to a dictionary (decoding), however, i
 The API server will send back a response with the provided data:
 ```json
 {
-  'status": "true",
+  "status": "true",
   "message": "User banned"
 }
 ```
