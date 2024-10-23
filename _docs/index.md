@@ -91,6 +91,58 @@ If the request was missing a required arguments, then it will return something l
 **Please note that the "message" arguments in these arguments are meant to be displayed to your members, outputted to logs, or exfiltrated to your webhooks. Some responses might not have these, so please perform a check in your code to see if the response had a message argument.**
 
 
+### /auth/check_game
+`Request Type: RequestNoUser` - `Method: POST` This endpoint checks if the corresponding `gameid` and `owner_secret` in the following strings are valid/is an actual registered and game.
+```json
+{
+  "owner_secret": "string",
+  "gameid": "string"
+}
+```
+The response will look like this:
+```json
+{
+  "status": "true",
+  "check": "true"
+}
+```
+If you are missing an argument, it will look like this:
+```json
+{
+  "status": "false",
+  "message": "This owner secret is not valid, please contact your game owner."
+}
+```
+
+
+### /auth/mods
+`Request Type: RequestNoUser` - `Method: POST` This endpoint checks the list of moderators of the corresponding `gameid` and `owner_secret` listed.
+```json
+{
+  "owner_secret": "string",
+  "gameid": "string"
+}
+```
+The response will look like this:
+```json
+{
+  "status": "true",
+  "moderators": [
+    "num1",
+    "num2",
+    "cont",
+  ]
+}
+```
+If you are missing an argument, it will look like this:
+```json
+{
+  "status": "false",
+  "message": "This owner secret is not valid, please contact your game owner."
+}
+```
+
+
 ### /auth/check_mod
 `Request Type: Request User` - `Method: POST`
 
