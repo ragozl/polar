@@ -149,17 +149,12 @@ If you are missing an argument, it will look like this:
 This endpoint checks if a specified UserID is a moderator. The server will perform a check in realtime, making it so that you can instantly remove one of your moderators; and it will update cross-platform with no delay.
 
 To fufill the request, you need to send all of the arguments. Check out the example below:
-```python
-import requests
-
-data = {
+```json
+{
   "owner_secret": "your_owner_secret",
   "gameid": "123456",
   "userid": "123456"
 }
-
-request = requests.post("https://api.polarisadmin.xyz/auth/check_mod", data=data)
-print(request.json())
 ```
 The response will look like this:
 ```json
